@@ -12,7 +12,7 @@
 
 ## 🌐 Live Demo
 
-🔗 **[boston-education-hub.vercel.app](https://boston-education-hub.vercel.app)** *(update setelah deploy)*
+🔗 **[boston-education-hub.vercel.app](https://boston-education-hub.vercel.app)**
 
 📦 **Repository:** [github.com/hafizhahdeaa/boston-education-hub](https://github.com/hafizhahdeaa/boston-education-hub)
 
@@ -27,8 +27,11 @@ Aplikasi ini merupakan **Tugas 2 (Web GIS)** dari mata kuliah Kapita Selekta Sis
 ---
 
 ## 📸 Screenshot
+<img width="1920" height="1200" alt="Screenshot 2026-05-13 103726" src="https://github.com/user-attachments/assets/9e9e86db-6856-4eaf-9949-64a10854b859" />
 
-*(Tambahkan screenshot setelah deploy)*
+<img width="1920" height="1200" alt="Screenshot 2026-05-13 103758" src="https://github.com/user-attachments/assets/37974f66-5a32-4f30-aa99-4784b2132a61" />
+
+<img width="1920" height="1200" alt="Screenshot 2026-05-13 103840" src="https://github.com/user-attachments/assets/24a06f96-fbf4-45b7-9ab5-2885df3155c7" />
 
 ---
 
@@ -266,7 +269,7 @@ WebGIS ini dapat digunakan oleh berbagai stakeholder:
 - 🎓 NIM: **1232002059**
 - 📚 Program Studi: **Sistem Informasi**
 - 🏛️ Institusi: **Universitas Bakrie**
-- 📖 Mata Kuliah: **Kapita Selekta Sistem Informasi (SIF610)**
+- 📖 Mata Kuliah: **Kapita Selekta Sistem Informasi (SIF61)**
 - 📅 Periode: **Mei 2026**
 
 ---
