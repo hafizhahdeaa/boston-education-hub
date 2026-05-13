@@ -1,0 +1,1059 @@
+{
+  "type": "FeatureCollection",
+  "name": "colleges_boston",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gordon-Conwell Theological Seminary",
+        "campus": "Boston",
+        "category": "Other Higher Education",
+        "original_category": "Divinity School",
+        "type": "Private",
+        "address": "90 Warren Street",
+        "city": "Roxbury",
+        "zipcode": "02119",
+        "phone": "(617) 427-7293",
+        "website": "http://www.gordonconwell.edu/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Gordon-Conwell_Theological_Seminary",
+        "degrees": "PBC, Master's, Doctoral",
+        "largest_program": "Evangelical Seminary",
+        "campus_setting": "Suburb: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.08273246659122,
+          42.32765507955154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roxbury Community College",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Community College",
+        "type": "Public",
+        "address": "1234 Columbus Avenue",
+        "city": "Roxbury Crossing",
+        "zipcode": "02120",
+        "phone": "(617) 427-0060",
+        "website": "https://www.rcc.mass.edu/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Roxbury_Community_College",
+        "degrees": "Certificate, Associate's",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.09552949869516,
+          42.32925035829832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jupiter Beauty Academy",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Private Vocational School",
+        "type": "Private",
+        "address": "95 Freeport Street",
+        "city": "Boston",
+        "zipcode": "02122",
+        "phone": "(617) 288-1811",
+        "website": "http://www.jupiterbeautyacademy.com/",
+        "wikipedia": "",
+        "degrees": "Certificate",
+        "largest_program": "Nail Technician/Specialist and Manicurist",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.05656039512866,
+          42.306314128021036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "University of Massachusetts Boston",
+        "campus": "Boston",
+        "category": "State University",
+        "original_category": "University of Massachusetts",
+        "type": "Public",
+        "address": "100 Morrissey Boulevard",
+        "city": "Boston",
+        "zipcode": "02125",
+        "phone": "(617) 287-5000",
+        "website": "http://www.umb.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/University_of_Massachusetts_Boston",
+        "degrees": "Certificate, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.03974496362525,
+          42.31431861446054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Empire Beauty School",
+        "campus": "Boston",
+        "category": "Other Higher Education",
+        "original_category": "Private Vocational School",
+        "type": "Private",
+        "address": "30 West Street",
+        "city": "Boston",
+        "zipcode": "02111",
+        "phone": "(508) 370-7447",
+        "website": "https://www.empire.edu/cosmetology-schools/massachusetts/boston?v=local",
+        "wikipedia": "",
+        "degrees": "Certificate",
+        "largest_program": "Cosmetology/Cosmetologist, General",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.06271799141709,
+          42.35460794517983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fisher College",
+        "campus": "",
+        "category": "Liberal Arts College",
+        "original_category": "Liberal Arts College",
+        "type": "Private",
+        "address": "118 Beacon Street",
+        "city": "Boston",
+        "zipcode": "02116",
+        "phone": "(617) 236-8800",
+        "website": "http://www.fisher.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Fisher_College",
+        "degrees": "Certificate, Associate's, Bachelor's, Master's",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0739862504003,
+          42.35529291293746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suffolk University",
+        "campus": "",
+        "category": "Research University",
+        "original_category": "Research University",
+        "type": "Private",
+        "address": "73 Tremont Street",
+        "city": "Boston",
+        "zipcode": "02108",
+        "phone": "(617) 573-8000",
+        "website": "http://www.suffolk.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Suffolk_University",
+        "degrees": "Certificate, Associate's, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.06081114129938,
+          42.35782376492568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North Bennet Street School",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Technical Institute",
+        "type": "Private",
+        "address": "150 North Street",
+        "city": "Boston",
+        "zipcode": "02109",
+        "phone": "(617) 227-0155",
+        "website": "http://www.nbss.org",
+        "wikipedia": "https://en.wikipedia.org/wiki/North_Bennet_Street_School",
+        "degrees": "Certificate",
+        "largest_program": "Furniture Design and Manufacturing",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.05454906099409,
+          42.362847674792924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harvard University",
+        "campus": "Business School",
+        "category": "Research University",
+        "original_category": "Research University",
+        "type": "Private",
+        "address": "117 Western Ave/Soldiers Field",
+        "city": "Boston",
+        "zipcode": "02163",
+        "phone": "(617) 495-6128",
+        "website": "http://www.hbs.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Harvard_University",
+        "degrees": "Associate's, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Midsize",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.12277714142611,
+          42.366397125459336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cambridge College",
+        "campus": "Main Campus",
+        "category": "Other Higher Education",
+        "original_category": "Private College",
+        "type": "Private",
+        "address": "500 Rutherford Avenue",
+        "city": "Boston",
+        "zipcode": "02129",
+        "phone": "(800) 877-4723",
+        "website": "http://www.cambridgecollege.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Cambridge_College",
+        "degrees": "Certificate, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.07296157901047,
+          42.38140749224505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MGH Institute of Health Professions",
+        "campus": "",
+        "category": "Medical School",
+        "original_category": "Medical School",
+        "type": "Private",
+        "address": "36 1st Avenue",
+        "city": "Boston",
+        "zipcode": "02129",
+        "phone": "(617) 726-3140",
+        "website": "http://www.mghihp.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/MGH_Institute_of_Health_Professions",
+        "degrees": "Bachelor's, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.05391620373459,
+          42.37495566474454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harvard University",
+        "campus": "School of Public Health",
+        "category": "Research University",
+        "original_category": "Research University",
+        "type": "Private",
+        "address": "677 Huntington Ave",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 432-1031",
+        "website": "http://www.hsph.harvard.edu/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Harvard_University",
+        "degrees": "Associate's, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Midsize",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.10295117404087,
+          42.335311323962586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harvard University",
+        "campus": "Medical School",
+        "category": "Research University",
+        "original_category": "Research University",
+        "type": "Private",
+        "address": "25 Shattuck Street",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 432-1000",
+        "website": "http://www.hms.harvard.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Harvard_University",
+        "degrees": "Associate's, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Midsize",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1041138641762,
+          42.335577065023934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boston University Chobanian & Avedisian School of Medicine",
+        "campus": "Medical Campus",
+        "category": "Medical School",
+        "original_category": "Medical School",
+        "type": "Private",
+        "address": "72 E Concord Street",
+        "city": "Boston",
+        "zipcode": "02118",
+        "phone": "(617) 638-5300",
+        "website": "http://www.bumc.bu.edu/busm/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Boston_University_Chobanian_%26_Avedisian_School_of_Medicine",
+        "degrees": "Certificate, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.07245514418884,
+          42.33632198108754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Massachusetts College of Pharmacy and Health Science",
+        "campus": "Boston",
+        "category": "Medical School",
+        "original_category": "Medical School",
+        "type": "Private",
+        "address": "179 Longwood Avenue",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 879-5964",
+        "website": "http://www.mcphs.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Massachusetts_College_of_Pharmacy_and_Health_Sciences",
+        "degrees": "Certificate, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "Pharmacy/Health Science",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.10111924257743,
+          42.33668991940641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Massachusetts College of Art and Design",
+        "campus": "",
+        "category": "State University",
+        "original_category": "State University",
+        "type": "Public",
+        "address": "621 Huntington Avenue",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 879-7000",
+        "website": "http://www.massart.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Massachusetts_College_of_Art_and_Design",
+        "degrees": "Certificate, Bachelor's, PBC, Master's",
+        "largest_program": "Visual Art",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.09876361034898,
+          42.336795609364245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wentworth Institute of Technology",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Technical College",
+        "type": "Private",
+        "address": "550 Huntington Avenue",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 442-9010",
+        "website": "http://www.wit.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Wentworth_Institute_of_Technology",
+        "degrees": "Certificate, Associate's, Bachelor's, Master's",
+        "largest_program": "Engineering",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0952480889699,
+          42.33687142593987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "School of the Museum of Fine Arts",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Visual Arts College",
+        "type": "Private",
+        "address": "230 The Fenway",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 267-6100",
+        "website": "https://smfa.tufts.edu/",
+        "wikipedia": "https://en.wikipedia.org/wiki/School_of_the_Museum_of_Fine_Arts_at_Tufts",
+        "degrees": "Bachelor's, Master's",
+        "largest_program": "Visual Arts",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.09659535675658,
+          42.33858387733923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Simmons University",
+        "campus": "Main Campus",
+        "category": "Liberal Arts College",
+        "original_category": "Women's Liberal Arts College, Coed Graduate School",
+        "type": "Private",
+        "address": "300 The Fenway",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 521-2000",
+        "website": "http://www.simmons.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Simmons_University",
+        "degrees": "Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.09985514034462,
+          42.33934472111069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Northeastern University Professional Programs",
+        "campus": "Professional Advancement",
+        "category": "Other Higher Education",
+        "original_category": "Private University",
+        "type": "Private",
+        "address": "360 Huntington Avenue",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 373-2000",
+        "website": "https://www.northeastern.edu/pan/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Northeastern_University_Professional_Programs",
+        "degrees": "Certificate, Associate's, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.08841508177193,
+          42.33936389671268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Northeastern University",
+        "campus": "Main Campus",
+        "category": "Research University",
+        "original_category": "Research University",
+        "type": "Private",
+        "address": "360 Huntington Avenue",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 373-2000",
+        "website": "http://www.northeastern.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Northeastern_University",
+        "degrees": "Bachelor's, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.08874799893137,
+          42.33995977022886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The New England Conservatory of Music",
+        "campus": "",
+        "category": "Performing Arts College",
+        "original_category": "Performing Arts College",
+        "type": "Private",
+        "address": "290 Huntington Avenue",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 585-1100",
+        "website": "https://necmusic.edu/",
+        "wikipedia": "https://en.wikipedia.org/wiki/New_England_Conservatory",
+        "degrees": "Certificate, Bachelor's, PBC, Master's, Doctoral",
+        "largest_program": "Music",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0863988326345,
+          42.34096651359763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Emmanuel College",
+        "campus": "",
+        "category": "Liberal Arts College",
+        "original_category": "Liberal Arts College",
+        "type": "Private",
+        "address": "400 The Fenway",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 735-9715",
+        "website": "http://www.emmanuel.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Emmanuel_College_(Massachusetts)",
+        "degrees": "Bachelor's, PBC, Master's, PMC",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.10242134987935,
+          42.34114133395924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boston Baptist College",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Divinity School",
+        "type": "Private",
+        "address": "950 Metropolitan Avenue",
+        "city": "Boston",
+        "zipcode": "02136",
+        "phone": "(617) 364-3510",
+        "website": "http://www.boston.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Boston_Baptist_College",
+        "degrees": "Certificate, Associate's, Bachelor's",
+        "largest_program": "Biblical Studies",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.11006495825244,
+          42.25382447747459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Simmons University",
+        "campus": "Residence Campus",
+        "category": "Liberal Arts College",
+        "original_category": "Women's Liberal Arts College, Coed Graduate School",
+        "type": "Private",
+        "address": "321 Brookline Avenue",
+        "city": "Boston",
+        "zipcode": "02215",
+        "phone": "(617) 521-2000",
+        "website": "http://www.simmons.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Simmons_University",
+        "degrees": "Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.10568745430331,
+          42.34126650638602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boston College",
+        "campus": "Brighton Campus",
+        "category": "Research University",
+        "original_category": "Research University",
+        "type": "Private",
+        "address": "129 Lake Street",
+        "city": "Brighton",
+        "zipcode": "02135",
+        "phone": "(617) 552-8000",
+        "website": "http://www.bc.edu/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Boston_College",
+        "degrees": "Certificate, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Small",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.16259431754764,
+          42.343966382224465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint John's Seminary",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Divinity School",
+        "type": "Private",
+        "address": "127 Lake Street",
+        "city": "Brighton",
+        "zipcode": "02135",
+        "phone": "(617) 254-2610",
+        "website": "http://www.sjs.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Saint_John%27s_Seminary_(Massachusetts)",
+        "degrees": "Bachelor's, Master's",
+        "largest_program": "Catholic Seminary",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1626743194808,
+          42.344341454827166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Benjamin Franklin Cummings Institute of Technology",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Technical College",
+        "type": "Private",
+        "address": "41 Berkeley Street",
+        "city": "Boston",
+        "zipcode": "02116",
+        "phone": "(617) 423-4630",
+        "website": "http://www.bfit.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Benjamin_Franklin_Cummings_Institute_of_Technology",
+        "degrees": "Certificate, Associate's, Bachelor's",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0701286670264,
+          42.34599574000795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Boston Conservatory at Berklee",
+        "campus": "",
+        "category": "Performing Arts College",
+        "original_category": "Performing Arts College",
+        "type": "Private",
+        "address": "8 The Fenway",
+        "city": "Boston",
+        "zipcode": "02215",
+        "phone": "(617) 536-6340",
+        "website": "https://bostonconservatory.berklee.edu/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Boston_Conservatory_at_Berklee",
+        "degrees": "Bachelor's, Master's",
+        "largest_program": "Music",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.09000608497384,
+          42.34620214407631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Berklee College of Music",
+        "campus": "",
+        "category": "Performing Arts College",
+        "original_category": "Performing Arts College",
+        "type": "Private",
+        "address": "1140 Boylston Street",
+        "city": "Boston",
+        "zipcode": "02215",
+        "phone": "(617) 266-1400",
+        "website": "http://www.berklee.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Berklee_College_of_Music",
+        "degrees": "Certificate, Bachelor's, PBC, Master's, PMC",
+        "largest_program": "Music",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.08937870061739,
+          42.34657335796758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boston Architectural College",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Private College",
+        "type": "Private",
+        "address": "320 Newbury Street",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 262-5000",
+        "website": "http://www.the-bac.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Boston_Architectural_College",
+        "degrees": "Certificate, Bachelor's, Master's",
+        "largest_program": "Architecture",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.08577973539548,
+          42.34848987134445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boston University",
+        "campus": "Charles River Campus",
+        "category": "Research University",
+        "original_category": "Research University",
+        "type": "Private",
+        "address": "1 Silber Way",
+        "city": "Boston",
+        "zipcode": "02215",
+        "phone": "(617) 353-2000",
+        "website": "http://www.bu.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Boston_University",
+        "degrees": "Certificate, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.09967744237859,
+          42.34960419636802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tufts University",
+        "campus": "Boston Campus",
+        "category": "Research University",
+        "original_category": "Research University",
+        "type": "Private",
+        "address": "145 Harrison Avenue",
+        "city": "Boston",
+        "zipcode": "02111",
+        "phone": "(617) 636-7000",
+        "website": "http://medicine.tufts.edu/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Tufts_University",
+        "degrees": "Certificate, Bachelor's, PBC, Master's, PMC, Doctoral",
+        "largest_program": "",
+        "campus_setting": "Suburb: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.06237152690936,
+          42.35016367730483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New England Law Boston",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Law School",
+        "type": "Private",
+        "address": "154 Stuart Street",
+        "city": "Boston",
+        "zipcode": "02116",
+        "phone": "(617) 451-0010",
+        "website": "http://www.nesl.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/New_England_Law_Boston",
+        "degrees": "Doctoral",
+        "largest_program": "Law",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.06640302292638,
+          42.35083947396396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New England College of Optometry",
+        "campus": "",
+        "category": "Medical School",
+        "original_category": "Graduate Medical Program",
+        "type": "Private",
+        "address": "424 Beacon Street",
+        "city": "Boston",
+        "zipcode": "02115",
+        "phone": "(617) 266-2030",
+        "website": "http://www.neco.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/New_England_College_of_Optometry",
+        "degrees": "Master's, PMC, Doctoral",
+        "largest_program": "Optometry",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.08680674028898,
+          42.351857869888114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Emerson College",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Private College",
+        "type": "Private",
+        "address": "120 Boylston Street",
+        "city": "Boston",
+        "zipcode": "02116",
+        "phone": "(617) 824-8500",
+        "website": "http://www.emerson.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Emerson_College",
+        "degrees": "Bachelor's, Master's",
+        "largest_program": "Communications, Performing Arts",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.06527751526049,
+          42.35196435526041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Urban College of Boston",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Adult Education",
+        "type": "Private",
+        "address": "2 Boylston Street",
+        "city": "Boston",
+        "zipcode": "02116",
+        "phone": "(617) 292-4723",
+        "website": "http://www.urbancollege.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Urban_College_of_Boston",
+        "degrees": "Certificate, Associate's",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.06418958074262,
+          42.352904823344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bunker Hill Community College",
+        "campus": "Charlestown",
+        "category": "Other Higher Education",
+        "original_category": "Community College",
+        "type": "Public",
+        "address": "250 New Rutherford Avenue",
+        "city": "Boston",
+        "zipcode": "02129",
+        "phone": "(617) 228-2000",
+        "website": "http://www.bhcc.mass.edu",
+        "wikipedia": "https://en.wikipedia.org/wiki/Bunker_Hill_Community_College",
+        "degrees": "Certificate, Associate's",
+        "largest_program": "",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.06944530568742,
+          42.375484251355715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Boston Beauty Academy",
+        "campus": "",
+        "category": "Other Higher Education",
+        "original_category": "Private Vocational School",
+        "type": "Private",
+        "address": "4 Neptune Road",
+        "city": "Boston",
+        "zipcode": "02128",
+        "phone": "(617) 569-2590",
+        "website": "https://suffolkbeautygroup.com/",
+        "wikipedia": "",
+        "degrees": "Certificate",
+        "largest_program": "Cosmetology",
+        "campus_setting": "City: Large",
+        "has_housing": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.02544116191181,
+          42.38028735810756
+        ]
+      }
+    }
+  ]
+}

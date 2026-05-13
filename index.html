@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boston Education Hub — Higher Education &amp; Transit Accessibility WebGIS</title>
+  <meta name="description" content="Interactive WebGIS mapping Boston's higher education institutions and MBTA public transit accessibility. Explore 39 universities and their proximity to subway stations." />
+  <meta property="og:title" content="Boston Education Hub" />
+  <meta property="og:description" content="Interactive WebGIS exploring Boston's higher education ecosystem and public transit accessibility." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Leaflet 1.9.4 -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Leaflet Heatmap -->
+  <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+
+  <!-- Turf.js -->
+  <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════ LOADING SCREEN ═══════ -->
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-logo">🎓</div>
+      <h2>Boston Education Hub</h2>
+      <div class="loader-spinner"></div>
+      <p>Loading map data…</p>
+    </div>
+  </div>
+
+  <!-- ═══════ HEADER ═══════ -->
+  <header class="app-header">
+    <div class="header-brand">
+      <button id="sidebar-toggle" aria-label="Toggle sidebar"><i class="fas fa-bars"></i></button>
+      <span class="header-logo">🎓</span>
+      <div class="header-text">
+        <h1>Boston Education Hub</h1>
+        <p>Higher Education &amp; Public Transit Accessibility</p>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="#" id="about-btn"><i class="fas fa-info-circle"></i> <span>About</span></a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> <span>GitHub</span></a>
+    </nav>
+  </header>
+
+  <!-- ═══════ BODY ═══════ -->
+  <div class="app-body">
+
+    <!-- Sidebar overlay (mobile) -->
+    <div id="sidebar-overlay"></div>
+
+    <!-- ── LEFT SIDEBAR ── -->
+    <aside id="left-sidebar">
+
+      <!-- Search -->
+      <div class="search-wrapper">
+        <div class="search-input-wrap">
+          <i class="fas fa-magnifying-glass"></i>
+          <input type="text" id="search-input" placeholder="Search universities…" autocomplete="off" aria-label="Search universities" />
+        </div>
+        <div id="search-dropdown"></div>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-header">
+          <span>Filter by Category</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="sidebar-section-body">
+          <div id="category-filters"></div>
+          <div class="filter-actions">
+            <button id="btn-select-all">Select All</button>
+            <button id="btn-clear-all">Clear All</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Layers -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-header">
+          <span>Layers</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="sidebar-section-body">
+          <div class="layer-toggle">
+            <div class="layer-toggle-label"><i class="fas fa-graduation-cap"></i> Universities</div>
+            <label class="toggle-switch"><input type="checkbox" id="toggle-universities" checked /><span class="toggle-slider"></span></label>
+          </div>
+          <div class="layer-toggle">
+            <div class="layer-toggle-label"><i class="fas fa-subway"></i> MBTA Stations</div>
+            <label class="toggle-switch"><input type="checkbox" id="toggle-stations" checked /><span class="toggle-slider"></span></label>
+          </div>
+          <div class="layer-toggle">
+            <div class="layer-toggle-label"><i class="fas fa-train-subway"></i> MBTA Lines</div>
+            <label class="toggle-switch"><input type="checkbox" id="toggle-lines" checked /><span class="toggle-slider"></span></label>
+          </div>
+          <div class="layer-toggle">
+            <div class="layer-toggle-label"><i class="fas fa-map"></i> Boston Boundary</div>
+            <label class="toggle-switch"><input type="checkbox" id="toggle-boundary" checked /><span class="toggle-slider"></span></label>
+          </div>
+          <div class="layer-toggle">
+            <div class="layer-toggle-label"><i class="fas fa-fire"></i> Heatmap</div>
+            <label class="toggle-switch"><input type="checkbox" id="toggle-heatmap" /><span class="toggle-slider"></span></label>
+          </div>
+          <div class="layer-toggle">
+            <div class="layer-toggle-label"><i class="fas fa-bullseye"></i> 500m Buffer</div>
+            <label class="toggle-switch"><input type="checkbox" id="toggle-buffer" /><span class="toggle-slider"></span></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Basemap -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-header">
+          <span>Basemap</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="sidebar-section-body">
+          <label class="basemap-option"><input type="radio" name="basemap" value="osm" checked /> OSM Standard</label>
+          <label class="basemap-option"><input type="radio" name="basemap" value="positron" /> CartoDB Positron</label>
+          <label class="basemap-option"><input type="radio" name="basemap" value="darkMatter" /> CartoDB Dark Matter</label>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ── MAP ── -->
+    <main id="map-container">
+      <div id="map"></div>
+    </main>
+
+    <!-- ── RIGHT PANEL ── -->
+    <aside id="right-panel">
+      <div class="panel-title">📊 <span>Statistics</span> Dashboard</div>
+
+      <!-- Quick Stats -->
+      <div class="stats-cards">
+        <div class="stat-card">
+          <div class="stat-number" id="stat-total">0</div>
+          <div class="stat-label">Universities</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-stations">0</div>
+          <div class="stat-label">MBTA Stations</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-buffer-pct">0%</div>
+          <div class="stat-label">Within 500m T</div>
+        </div>
+      </div>
+
+      <!-- Category Chart -->
+      <div class="chart-section">
+        <h3>Universities by Category</h3>
+        <div class="chart-wrap">
+          <canvas id="category-chart"></canvas>
+        </div>
+      </div>
+
+      <!-- Insights -->
+      <div class="insights-section">
+        <h3>Key Insights</h3>
+        <ul id="insights-list"></ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Stats toggle (tablet/mobile) -->
+  <button id="stats-toggle" aria-label="Toggle statistics"><i class="fas fa-chart-bar"></i></button>
+
+  <!-- ═══════ ABOUT MODAL ═══════ -->
+  <div id="about-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>About This Project</h2>
+        <button id="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size:28px;margin-bottom:4px;">🎓</p>
+        <h3>Boston Education Hub</h3>
+        <p>An interactive WebGIS exploring Boston's higher education ecosystem and public transit accessibility.</p>
+        <div class="modal-divider"></div>
+        <h3><span class="modal-icon">📊</span> Data</h3>
+        <ul>
+          <li>39 Higher Education Institutions</li>
+          <li>MBTA Subway System (5 lines)</li>
+          <li>113 Rapid Transit Stations</li>
+        </ul>
+        <h3><span class="modal-icon">🛠️</span> Built with</h3>
+        <p>Leaflet.js · Turf.js · Chart.js · Font Awesome</p>
+        <h3><span class="modal-icon">📚</span> Data Sources</h3>
+        <ul>
+          <li>City of Boston Open Data</li>
+          <li>MassGIS (Bureau of Geographic Information)</li>
+          <li>OpenStreetMap</li>
+        </ul>
+        <div class="modal-divider"></div>
+        <h3><span class="modal-icon">👤</span> Author</h3>
+        <p><strong>Hafizhah Dea Az Zahrah</strong> — 1232002059<br/>
+           Information Systems · Universitas Bakrie<br/>
+           UTS Kapita Selekta Sistem Informasi<br/>
+           May 2026</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ APPLICATION JS ═══════ -->
+  <script src="js/config.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/map-init.js"></script>
+  <script src="js/layers.js"></script>
+  <script src="js/controls.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/buffer.js"></script>
+  <script src="js/heatmap.js"></script>
+
+  <script>
+    /**
+     * Main application bootstrap.
+     * Loads data, initialises map, creates layers, binds controls.
+     */
+    (async () => {
+      const MIN_LOAD_TIME = 1200; // ms — polished feel
+      const start = Date.now();
+
+      try {
+        // 1. Initialise map
+        const map = MapInit.init();
+
+        // 2. Load all data
+        const data = await DataLoader.loadAll();
+
+        // 3. Create layers
+        Layers.create(map, data);
+
+        // 4. Initialise controls (search, filters, toggles)
+        Controls.init(map);
+        Controls.initCollapsible();
+
+        // 5. Initialise analytics dashboard
+        Analytics.init();
+
+        // 6. Ensure minimum loading time for polish
+        const elapsed = Date.now() - start;
+        if (elapsed < MIN_LOAD_TIME) {
+          await new Promise(r => setTimeout(r, MIN_LOAD_TIME - elapsed));
+        }
+
+        // 7. Hide loading screen
+        document.getElementById('loading-screen').classList.add('hidden');
+
+        // 8. Animate stat counters
+        setTimeout(() => Analytics.animateCounters(), 300);
+
+        console.log('🎓 Boston Education Hub — Ready!');
+
+      } catch (err) {
+        console.error('❌ Error loading application:', err);
+        const ls = document.getElementById('loading-screen');
+        if (ls) {
+          ls.querySelector('.loader-spinner').style.display = 'none';
+          ls.querySelector('p').textContent = 'Error loading data. Please refresh.';
+          ls.querySelector('p').style.color = '#FFD700';
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
