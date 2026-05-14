@@ -20,7 +20,7 @@
 
 ## 📖 Tentang Proyek
 
-Boston dikenal sebagai salah satu kota pendidikan terdepan di dunia, dengan julukan **"Athens of America"** karena konsentrasi institusi pendidikan tingginya yang luar biasa. Proyek ini mengeksplorasi pola spasial **39 universitas dan college** di Kota Boston, serta menganalisis seberapa baik mereka terhubung dengan sistem transportasi publik MBTA — sebuah pertanyaan kunci dalam perencanaan kota yang berkelanjutan dan equity pendidikan.
+Boston dikenal sebagai salah satu kota pendidikan terdepan di dunia, dengan julukan **"Athens of America"** karena konsentrasi institusi pendidikan tingginya yang luar biasa. Proyek ini mengeksplorasi pola spasial **39 universitas dan college** di Kota Boston, serta menganalisis seberapa baik mereka terhubung dengan sistem transportasi publik MBTA, sebuah pertanyaan kunci dalam perencanaan kota yang berkelanjutan dan equity pendidikan.
 
 Aplikasi ini merupakan **Tugas 2 (Web GIS)** dari mata kuliah Kapita Selekta Sistem Informasi, dan merupakan kelanjutan dari Tugas 1 (Peta Tematik Statis) dengan wilayah studi dan tema yang konsisten.
 
